@@ -1,0 +1,7 @@
+.nav-item:hover {
+  background-color: rgba(127,127,127,0.4);
+}
+
+.nav-text {
+  font-weight: 600;
+}
