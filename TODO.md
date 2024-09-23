@@ -1,4 +1,4 @@
-# Theme
+# Todo for BenSmylie.com
 
 ## Colour schemes
 
@@ -15,12 +15,13 @@
 
 - Create nav link components
 
-# Content
+## Content
 
-- Create pages
-- Create routes for pages
+- Create & write pages
+- Create routes for those pages
+- Celebrate achieving a milestone, Ben.  Love you, buddy.
 
-# Accessibility
+## Accessibility
 
 - 'Go to content' link
 - Ensure keyboard navigability
