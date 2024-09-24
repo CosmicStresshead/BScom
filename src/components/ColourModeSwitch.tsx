@@ -9,9 +9,9 @@ const ColourModeSwitch = () => {
     <VStack>
       <Text fontSize={"0.75rem"}>Colour mode:</Text>
       <HStack>
-        <Icon as={MdOutlineDarkMode} />
-        <Switch colorScheme="yellow" isChecked={colorMode === 'light'} onChange={toggleColorMode} ></Switch>
-        <Icon as={MdOutlineLightMode} />
+        <Icon as={MdOutlineDarkMode} onClick={colorMode === "light" ? toggleColorMode : undefined} />
+        <Switch colorScheme="yellow" isChecked={colorMode === 'light'} onChange={toggleColorMode} />
+        <Icon as={MdOutlineLightMode} onClick={colorMode === "dark" ? toggleColorMode : undefined} />
       </HStack>
       {/* <Text>{colorMode.toUpperCase()}</Text> */}
     </VStack>
