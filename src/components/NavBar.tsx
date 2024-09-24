@@ -1,5 +1,5 @@
-import { Image, VStack, Stack, Icon } from '@chakra-ui/react';
-import { MdOutlineBadge, MdFormatListBulleted, MdCode } from 'react-icons/md'
+import { Image, VStack, Stack, Icon, Link } from '@chakra-ui/react';
+import { MdOutlineMessage, MdFormatListBulleted, MdCode } from 'react-icons/md'
 import logo from '../assets/BSlogo.webp';
 import NavItem from './NavItem';
 
@@ -10,13 +10,15 @@ interface Props {
 const NavBar = ({orientation}: Props) => {
   return (
     <>
-    <VStack>
-      <Image src={logo} boxSize={"10rem"} padding="2rem" />
+    <VStack alignItems="center" justifyItems="center" gap="0" padding="0" margin="0">
+      <Link href="/">
+      <Image src={logo} boxSize={"8rem"} padding="1rem" alt="BenSmylie.com" title="BenSmylie.com"/>
+      </Link>
     </VStack>
-    <Stack direction={orientation} width="100%" alignItems="center" justifyContent="center" padding={"1rem"} gap="1rem">
+    <Stack direction={orientation} width="100%" alignItems="center" justifyContent="center" padding={"1rem"} gap="0rem">
       <NavItem url="#" text="Resume" icon={MdFormatListBulleted} />
       <NavItem url="#" text="Projects" icon={MdCode} />
-      <NavItem url="#" text="About Ben" icon={MdOutlineBadge} />
+      <NavItem url="#" text="Contact" icon={MdOutlineMessage} />
     </Stack>
     </>
   )

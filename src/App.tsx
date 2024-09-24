@@ -17,7 +17,7 @@ function App() {
       }}
       templateColumns={{
         base: "1fr",
-        lg: "10rem 1fr 10rem"
+        lg: "8rem 1fr 8rem"
       }}
       >
     <Show above="lg">
